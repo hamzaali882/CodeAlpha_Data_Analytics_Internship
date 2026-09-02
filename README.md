@@ -1,4 +1,6 @@
-# E-Commerce Book Data Web Scraping using Python
+# CodeAlpha Internship — Task 1: Web Scraping
+
+## E-Commerce Book Data Web Scraping using Python
 
 ## Project Overview
 
