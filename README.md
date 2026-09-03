@@ -1,144 +1,130 @@
-# CodeAlpha Internship — Data Analytics Projects
+# CodeAlpha Data Analytics Internship
 
-## Task 1: Web Scraping
+This repository contains the projects I completed during my Data Analytics
+Internship at CodeAlpha.
 
-### E-Commerce Book Data Web Scraping using Python
+The internship focuses on applying Python and data analytics concepts to
+different real-world style projects.
 
-### Project Overview
+## Internship Tasks
 
-This project demonstrates web scraping using Python. Book information was collected from the **Books to Scrape** website and organized into a structured dataset.
+### Task 1 — Web Scraping
 
-### Objective
+**Project:** E-Commerce Book Data Web Scraping using Python
 
-The main goal of this project was to collect book data from all 50 pages of the website and prepare it for further analysis.
+For this task, I scraped book information from Books to Scrape using Python.
 
-The following information was collected:
+The dataset contains 1,000 books and includes information such as:
 
-* Book title
-* Price
-* Rating
-* Availability
-* Product URL
-* Category
+- Book title
+- Product URL
+- Price
+- Rating
+- Availability
+- Category
 
-### Tools and Libraries
+**Tools used:**
+- Python
+- Requests
+- BeautifulSoup
+- Pandas
 
-* Python
-* Requests
-* BeautifulSoup
-* Pandas
-* Matplotlib
-
-### Data Source
-
-The data was collected from **Books to Scrape**, a website made for practicing web scraping.
-
-Source: https://books.toscrape.com/
-
-### Dataset
-
-The final dataset contains:
-
-* **1,000 books**
-* **6 columns**
-* **50 categories**
-* No missing values
-* No duplicate rows
-
-The dataset is saved inside the Task 1 folder.
-
-### Task 1 Project Structure
-
-```text
-task1_web_scraping/
-├── data/
-│   └── books_dataset.csv
-├── notebook/
-│   └── web_scraping.ipynb
-└── src/
-    └── scraper.py
-```
-
-### Key Findings
-
-* The average book price is approximately **£35.07**.
-* Book prices range from **£10.00 to £59.99**.
-* All 1,000 books were listed as **In stock**.
-* The dataset contains **50 different categories**.
-* The most common rating is **One star**.
-
-### Task 1 Conclusion
-
-This project helped me practice web scraping with Python and learn how to collect, organize, check, and visualize data from a website. The final dataset can also be used for further data analysis and visualization projects.
+**Files:**
+- `task1_web_scraping/data/books_dataset.csv`
+- `task1_web_scraping/notebook/web_scraping.ipynb`
+- `task1_web_scraping/src/scraper.py`
 
 ---
 
-# Task 2: Exploratory Data Analysis
+### Task 2 — Exploratory Data Analysis
 
-## E-Commerce Book Dataset EDA
+**Project:** E-Commerce Book Dataset EDA
 
-### Project Overview
+For this task, I explored the book dataset collected during Task 1.
 
-In Task 2, I explored the book dataset collected during Task 1. The goal was to understand the data, identify patterns, and find useful insights about book prices, ratings, categories, and availability.
+The analysis included:
 
-### Objective
+- Dataset overview
+- Data types
+- Missing value checking
+- Duplicate checking
+- Price analysis
+- Rating analysis
+- Category analysis
+- Statistical summaries
+- Basic visualizations
 
-The main objectives of this analysis were:
+**Tools used:**
+- Python
+- Pandas
+- Matplotlib
 
-* Understand the structure of the dataset
-* Check for missing values and duplicate rows
-* Analyze book prices
-* Explore book ratings
-* Explore book categories
-* Compare prices across ratings and categories
-* Find useful patterns and insights
-
-### Analysis Performed
-
-The following analysis was performed using Python:
-
-* Dataset overview
-* Data type checking
-* Missing value checking
-* Duplicate checking
-* Price statistics
-* Rating distribution
-* Category distribution
-* Cheapest and most expensive books
-* Average price by rating
-* Average price by category
-* Availability analysis
-* Price distribution visualization
-
-### Key Findings
-
-* The dataset contains **1,000 books** and **6 columns**.
-* There are **no missing values**.
-* There are **no duplicate rows**.
-* The average book price is around **£35.07**.
-* Book prices range from **£10.00 to £59.99**.
-* There are **50 different categories**.
-* **Default** is the most common category, with 152 books.
-* **One-star** books are the most common rating, with 226 books.
-* All 1,000 books are listed as **In stock**.
-* Average book prices vary across different ratings and categories.
-
-### Task 2 Project Structure
-
-```text
-task2_eda/
-└── eda_analysis.ipynb
-```
-
-### Task 2 Conclusion
-
-In this task, I explored the book dataset collected during Task 1 and analyzed its main characteristics. I checked the data quality and explored prices, ratings, categories, and availability.
-
-This task gave me more practice with Pandas, basic data analysis, and data visualization using Python. It also helped me understand how exploratory data analysis can be used to find useful patterns in a dataset.
+**File:**
+- `task2_eda/eda_analysis.ipynb`
 
 ---
 
-## Overall Project Structure
+### Task 3 — Data Visualization
+
+**Project:** E-Commerce Book Dataset Visualization
+
+For this task, I created different visualizations to understand patterns
+in book prices, ratings, and categories.
+
+The visualizations included:
+
+- Rating distribution
+- Book price distribution
+- Top book categories
+- Average price by rating
+- Average price by category
+- Book price vs rating
+- Price distribution by rating
+
+**Tools used:**
+- Python
+- Pandas
+- Matplotlib
+
+**File:**
+- `task3_data_visualization/data_visualization.ipynb`
+
+---
+
+### Task 4 — Sentiment Analysis
+
+**Project:** Sentiment Analysis of Book Reviews
+
+For this task, I analyzed a dataset containing 1,209 book reviews and
+identified three sentiment categories:
+
+- Positive
+- Negative
+- Neutral
+
+The analysis included:
+
+- Checking the dataset for missing values and duplicates
+- Cleaning review text
+- Converting sentiment labels into readable names
+- Analyzing common words
+- Comparing words across different sentiments
+- Analyzing review length
+- Visualizing sentiment distribution
+- Calculating sentiment percentages
+
+**Tools used:**
+- Python
+- Pandas
+- Matplotlib
+- Regular Expressions
+
+**File:**
+- `task4_sentiment_analysis/sentiment_analysis.ipynb`
+
+---
+
+## Repository Structure
 
 ```text
 CodeAlpha_WebScraping/
@@ -154,13 +140,12 @@ CodeAlpha_WebScraping/
 ├── task2_eda/
 │   └── eda_analysis.ipynb
 │
+├── task3_data_visualization/
+│   └── data_visualization.ipynb
+│
+├── task4_sentiment_analysis/
+│   ├── g_reviews.csv
+│   └── sentiment_analysis.ipynb
+│
 ├── requirements.txt
 └── README.md
-```
-
-## Internship Progress
-
-* [x] Task 1 — Web Scraping
-* [x] Task 2 — Exploratory Data Analysis
-* [ ] Task 3 — Data Visualization
-* [ ] Task 4 — Sentiment Analysis
